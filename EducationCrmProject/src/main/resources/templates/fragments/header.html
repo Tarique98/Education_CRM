@@ -1,0 +1,67 @@
+<header th:fragment="crm-header">
+    <nav class="navbar navbar-expand-lg" 
+         style="background: linear-gradient(90deg, #007bff, #00c6ff);">
+        <div class="container">
+            <!-- Logo + Brand -->
+            <a class="navbar-brand d-flex align-items-center text-white" href="/index">
+                <img src="/images/logo.png" alt="Smart Programming Logo" width="60" class="me-2"/>
+                <span class="h4 mb-0 text-white">Smart Programming</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+
+                    <!-- Home -->
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-white fw-semibold" href="/index" style="transition:0.3s;">
+                            Home
+                        </a>
+                    </li>
+
+                    <!-- More dropdown -->
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link dropdown-toggle text-white fw-semibold" href="#" id="moreDropdown"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false" style="transition:0.3s;">
+                            More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Online Batch Details</a></li>
+                            <li><a class="dropdown-item" href="#">About Us</a></li>
+                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Buttons -->
+                    <li class="nav-item me-2">
+                        <a class="btn btn-light px-3 fw-semibold" href="/login"
+                           style="border-radius: 20px; transition:0.3s;">
+                            Login
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-warning px-3 fw-semibold" href="/register"
+                           style="border-radius: 20px; transition:0.3s;">
+                            Register
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <style>
+        .nav-link:hover {
+            color: #ffe082 !important;
+            transform: scale(1.05);
+        }
+        .btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</header>
